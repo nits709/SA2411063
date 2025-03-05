@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.APITest.jsonValidationTest">
+      <class name="httpsAPIMethods.GetTestAPI">
         <methods>
-          <include name="singleUserTest"/>
+          <include name="getPageResponse"/>
         </methods>
-      </class> <!-- com.APITest.jsonValidationTest -->
+      </class> <!-- httpsAPIMethods.GetTestAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
