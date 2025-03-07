@@ -10,9 +10,6 @@ import static org.hamcrest.Matchers.*;
 public class BearerTokenAuthentication {
 
 	
-	//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
-	
-	
 	@Test
 	public void bearerTokenTest() {
 		
