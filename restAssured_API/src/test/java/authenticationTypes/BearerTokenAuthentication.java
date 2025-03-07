@@ -15,7 +15,7 @@ public class BearerTokenAuthentication {
 		
 		System.out.println("validate bearer token authentication");
 		
-		String token = "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";
+		String token = "kindly use github account token";
 		
 		Response res = given()
 				.header("Authorization","Bearer "+token)
