@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-10T22:38:14 IST" name="Default suite" finished-at="2025-03-10T22:38:19 IST" duration-ms="5361">
+  <suite started-at="2025-03-12T22:19:40 IST" name="Default suite" finished-at="2025-03-12T22:19:49 IST" duration-ms="9820">
     <groups>
     </groups>
-    <test started-at="2025-03-10T22:38:14 IST" name="Default test" finished-at="2025-03-10T22:38:19 IST" duration-ms="5361">
-      <class name="CreateAppiumServerConnections.CreateAppiumSessionWithuiAutomation2Options">
-        <test-method signature="CreateUIAutomation2Options()[pri:0, instance:CreateAppiumServerConnections.CreateAppiumSessionWithuiAutomation2Options@5158b42f]" started-at="2025-03-10T22:38:14 IST" name="CreateUIAutomation2Options" finished-at="2025-03-10T22:38:19 IST" duration-ms="5311" status="PASS">
+    <test started-at="2025-03-12T22:19:40 IST" name="Default test" finished-at="2025-03-12T22:19:49 IST" duration-ms="9820">
+      <class name="MobileEvents.scrollGestures">
+        <test-method signature="testScroll()[pri:0, instance:MobileEvents.scrollGestures@6c64cb25]" started-at="2025-03-12T22:19:40 IST" name="testScroll" finished-at="2025-03-12T22:19:49 IST" duration-ms="9750" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateUIAutomation2Options -->
-      </class> <!-- CreateAppiumServerConnections.CreateAppiumSessionWithuiAutomation2Options -->
+        </test-method> <!-- testScroll -->
+      </class> <!-- MobileEvents.scrollGestures -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
