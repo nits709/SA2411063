@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MobileEvents.scrollGestures">
+      <class name="AndroidDevicesandAppiumFunctionsl.workingWithAppCommands">
         <methods>
-          <include name="testScroll"/>
+          <include name="testAppsCommands"/>
         </methods>
-      </class> <!-- MobileEvents.scrollGestures -->
+      </class> <!-- AndroidDevicesandAppiumFunctionsl.workingWithAppCommands -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

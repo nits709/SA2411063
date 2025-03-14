@@ -9,6 +9,7 @@ import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import projectUtilities.appiumDriverInitialization;
+import projectUtilities.functionUtilities;
 
 
 public class scrollGestures {
@@ -27,11 +28,14 @@ public class scrollGestures {
 		  
 		  //scroll
 		  
+		  functionUtilities.scrollUpToUserCount(testDriver, area, 3);
 //		  testDriver.executeScript("mobile: scrollGesture",ImmutableMap.of(
 //				  "elementId",((RemoteWebElement)area).getId(),
 //				  "direction", "down",
 //				  "percent", 1.0)
 //				 );
+		  
+		
 		  
 		  
 		  System.out.println("scroll gestures done successfully!");
