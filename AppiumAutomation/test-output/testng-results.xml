@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-13T22:36:19 IST" name="Default suite" finished-at="2025-03-13T22:36:47 IST" duration-ms="28420">
+  <suite started-at="2025-03-17T20:44:52 IST" name="Default suite" finished-at="2025-03-17T20:45:31 IST" duration-ms="38908">
     <groups>
     </groups>
-    <test started-at="2025-03-13T22:36:19 IST" name="Default test" finished-at="2025-03-13T22:36:47 IST" duration-ms="28420">
-      <class name="AndroidDevicesandAppiumFunctionsl.workingWithAppCommands">
-        <test-method signature="testAppsCommands()[pri:0, instance:AndroidDevicesandAppiumFunctionsl.workingWithAppCommands@6ae5aa72]" started-at="2025-03-13T22:36:19 IST" name="testAppsCommands" finished-at="2025-03-13T22:36:47 IST" duration-ms="28330" status="PASS">
+    <test started-at="2025-03-17T20:44:52 IST" name="Default test" finished-at="2025-03-17T20:45:31 IST" duration-ms="38908">
+      <class name="locatorStrategy.testMobileLocator">
+        <test-method signature="testLocator()[pri:0, instance:locatorStrategy.testMobileLocator@6ae5aa72]" started-at="2025-03-17T20:44:52 IST" name="testLocator" finished-at="2025-03-17T20:45:31 IST" duration-ms="38834" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAppsCommands -->
-      </class> <!-- AndroidDevicesandAppiumFunctionsl.workingWithAppCommands -->
+        </test-method> <!-- testLocator -->
+      </class> <!-- locatorStrategy.testMobileLocator -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
