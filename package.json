@@ -1,0 +1,14 @@
+{
+  "name": "sa2411063_cypress_learning",
+  "version": "1.0.0",
+  "description": "Learning Cypress Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nitin Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.2.1"
+  }
+}
