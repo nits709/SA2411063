@@ -26,16 +26,17 @@ describe("browserfuctionInCypress",()=>{
 
 //[data-pid='23'] | div[class='header__aside'] [aria-label='Visit the Gmail product page'] 
     it("browser Application navigate forward/back-go",()=>{
-        cy.visit("http://google.co.in")
-        cy.wait(3000)
-        cy.get("[data-pid='23']").click(); // command clicks on gmail link.
+        cy.visit("https://parabank.parasoft.com/parabank/index.htm")
+        //cy.wait(3000)
+        cy.get("#headerPanel > ul.leftmenu > li:nth-child(3) > a").click(); // command clicks on gmail link.
        // cy.wait(3000)
+    cy.log("title of page " + cy.title().log())
        // cy.get("div[class='header__aside'] [aria-label='Visit the Gmail product page']").click()
         cy.wait(3000)
         cy.go('back')
         cy.wait(2000)
         cy.go('forward');
-        cy.wait(2000)
+        //cy.wait(2000)
 
     })
 
