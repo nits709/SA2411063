@@ -1,0 +1,57 @@
+PlayWright
+----------------------
+1. Playwright is functional automation tool, like selenium webdriver, cypress, etc.
+2. PLaywright supports -> webbased application, Mobile web apps, API
+3. Langugage Supported -> .net(C#), Javascripts, TypeScripts, Java, Python
+4. Browser supports -> Chromium, WebKit(Safari) and Firefox (headless/headed).
+5. OS Supported --> Windows, MacOs, Linux and Support CLI Runs
+
+
+Features of Playwright
+1. free and Open Source 
+2. Multibrowser and multiple platform (OS & Langugage binding)
+3. Easy setup and configuration.
+4. Functional , APi, and accessibility testing.
+5. CI, CD, Docker
+6. Parallel testing.
+7. Auto  wait mechanism - waits
+8. Build in Assertions.
+9. Multi tab and Multi window feature is available in playwright
+10. Frames and shadow dom.
+11. test parameter - parameterization 
+12. Emulate the mobile devices
+13. Fast
+
+
+PlayWright Installations
+------------------------------
+1. Node.js 
+2. VS Code
+3. Create project folder -->  open in VSCode.
+4. install playwright using terminal
+			npm init playwright@latest
+
+5. Install playwright using vs code extension.			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

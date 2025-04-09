@@ -25,6 +25,6 @@ test('locators',async ({page})=>{
     await expect(logOutElement).toBeVisible();
 
     await page.close();
-    page.waitForSelector()
+    //page.waitForSelector()
 
 })
