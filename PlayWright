@@ -257,7 +257,24 @@ Assertions
 12. expect(locator).toHaveValue();
 
 
+===============================================================
+					common functions for assertion
+				//button
+				expect(await page.locator('locator').toBeEnabled(); /disabled)
 
+				text field
+				
+				expect(await page.locator('locator')).toBeVisible();
+				expect(await page.locator('locator')).toBeEmpty(); // true or false
+                 expect(await page.locator('locator')).toBeEditable();
+                 expect(await page.locator('locator')).toBeEnabled();
+				
+
+				// checkbox
+				expect(await page.locator('locator')).toBeChecked();// true or false.
+				expect(await page.locator('locator')).isChecked().toBeTruthy();// true
+
+				expect(await page.locator('locator')).isChecked().toBeFalsy();// false
 
 
 

@@ -12,15 +12,15 @@ test('AssertionsinPlaywright',async ({page})=>{
 
     const radioSelection = await page.locator("gender-male");
     await radioSelection.click(); // this clicks select the male radio button
-    await expect(radioSelection).toBeChecked(); // this validats male radio button checked or not.
+    await expect.soft(radioSelection).toBeChecked(); // this validats male radio button checked or not.
 
     //3. checkbox validation
 
     const newsletterCheckbox = await page.locator('#Newsletter');
-    await expect(newsletterCheckbox).toBeChecked(); // this validatsnewsleeter checkbox is checked.
+    await expect.soft(newsletterCheckbox).toBeChecked(); // this validatsnewsleeter checkbox is checked.
    
     //text validation.  - fully qualified name of element
-    await expect(page.locator('#register-button').toHaveText('Register'))
+    await expect.soft(page.locator('#register-button').toHaveText('Register'))
 
 
     // for partial
