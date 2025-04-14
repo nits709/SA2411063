@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3850","locators","chromium","Mon Apr 14 22:37:33 IST 2025","passed","Mon Apr 14 22:37:37 IST 2025","","Locators.spec.js","",""
+"","4983","buildInLocators","chromium","Mon Apr 14 22:37:33 IST 2025","passed","Mon Apr 14 22:37:38 IST 2025","","builtInLocators.spec.js","",""

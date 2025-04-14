@@ -27,7 +27,7 @@ import {test, expect} from '@playwright/test';
                 let status = false;
                 for(const option of options){
                    // console.log(await option.textContent());
-                   let fa = option.textContent();
+                   let fa = await option.textContent();
                    
                    if(fa.includes('France')){
                     status=true;

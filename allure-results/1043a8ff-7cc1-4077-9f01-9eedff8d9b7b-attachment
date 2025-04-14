@@ -1,0 +1,473 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Mulitple Files Upload
+- Location: /Volumes/Renuka/Training_Materials/SA2411063_Playwright_Learning/tests/handlingFileUpload.spec.js:13:5
+
+# Error details
+
+```
+Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('#multipleFilesInputt') to be visible
+
+    at /Volumes/Renuka/Training_Materials/SA2411063_Playwright_Learning/tests/handlingFileUpload.spec.js:16:16
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "Automation Testing Practice" [level=1]
+  - paragraph: For Selenium, Cypress & Playwright
+- list:
+  - listitem:
+    - link "Home"
+  - listitem:
+    - link "Udemy Courses"
+  - listitem:
+    - link "Online Trainings"
+  - listitem:
+    - link "Blog"
+- heading "GUI Elements" [level=3]:
+  - link "GUI Elements"
+- text: "Name:"
+- textbox "Enter Name"
+- text: "Email:"
+- textbox "Enter EMail"
+- text: "Phone:"
+- textbox "Enter Phone"
+- text: "Address:"
+- textbox "Address:"
+- text: "Gender:"
+- radio "Male"
+- text: Male
+- radio "Female"
+- text: "Female Days:"
+- checkbox "Sunday"
+- text: Sunday
+- checkbox "Monday"
+- text: Monday
+- checkbox "Tuesday"
+- text: Tuesday
+- checkbox "Wednesday"
+- text: Wednesday
+- checkbox "Thursday"
+- text: Thursday
+- checkbox "Friday"
+- text: Friday
+- checkbox "Saturday"
+- text: "Saturday Country:"
+- combobox "Country:":
+  - option "United States" [selected]
+  - option "Canada"
+  - option "United Kingdom"
+  - option "Germany"
+  - option "France"
+  - option "Australia"
+  - option "Japan"
+  - option "China"
+  - option "Brazil"
+  - option "India"
+- text: "Colors:"
+- listbox "Colors:":
+  - option "Red"
+  - option "Blue"
+  - option "Green"
+  - option "Yellow"
+  - option "Red"
+  - option "White"
+  - option "Green"
+- text: "Sorted List:"
+- listbox "Sorted List:":
+  - option "Cat"
+  - option "Cheetah"
+  - option "Deer"
+  - option "Dog"
+  - option "Elephant"
+  - option "Fox"
+  - option "Giraffe"
+  - option "Lion"
+  - option "Rabbit"
+  - option "Zebra"
+- paragraph:
+  - text: "Date Picker 1:"
+  - textbox
+- paragraph:
+  - text: "Date Picker 2:"
+  - textbox
+- text: "Date Picker 3: (Select a Date Range)"
+- textbox
+- text: to
+- textbox
+- button "Submit"
+- link "Home"
+- text: "Subscribe to:"
+- link "Posts (Atom)"
+- heading "Upload Files" [level=2]
+- textbox
+- button "Upload Single File"
+- paragraph
+- textbox
+- button "Upload Multiple Files"
+- paragraph
+- heading "Static Web Table" [level=2]
+- table:
+  - rowgroup:
+    - row "BookName Author Subject Price":
+      - cell "BookName"
+      - cell "Author"
+      - cell "Subject"
+      - cell "Price"
+    - row "Learn Selenium Amit Selenium 300":
+      - cell "Learn Selenium"
+      - cell "Amit"
+      - cell "Selenium"
+      - cell "300"
+    - row "Learn Java Mukesh Java 500":
+      - cell "Learn Java"
+      - cell "Mukesh"
+      - cell "Java"
+      - cell "500"
+    - row "Learn JS Animesh Javascript 300":
+      - cell "Learn JS"
+      - cell "Animesh"
+      - cell "Javascript"
+      - cell "300"
+    - row "Master In Selenium Mukesh Selenium 3000":
+      - cell "Master In Selenium"
+      - cell "Mukesh"
+      - cell "Selenium"
+      - cell "3000"
+    - row "Master In Java Amod JAVA 2000":
+      - cell "Master In Java"
+      - cell "Amod"
+      - cell "JAVA"
+      - cell "2000"
+    - row "Master In JS Amit Javascript 1000":
+      - cell "Master In JS"
+      - cell "Amit"
+      - cell "Javascript"
+      - cell "1000"
+- heading "Dynamic Web Table" [level=2]
+- table:
+  - rowgroup:
+    - row "Name Memory (MB) Disk (MB/s) Network (Mbps) CPU (%)":
+      - cell "Name"
+      - cell "Memory (MB)"
+      - cell "Disk (MB/s)"
+      - cell "Network (Mbps)"
+      - cell "CPU (%)"
+  - rowgroup:
+    - row "Chrome 92.0 MB 0.46 MB/s 8.9 Mbps 3.1%":
+      - cell "Chrome"
+      - cell "92.0 MB"
+      - cell "0.46 MB/s"
+      - cell "8.9 Mbps"
+      - cell "3.1%"
+    - row "System 30.9 MB 0.14 MB/s 2.0 Mbps 5.6%":
+      - cell "System"
+      - cell "30.9 MB"
+      - cell "0.14 MB/s"
+      - cell "2.0 Mbps"
+      - cell "5.6%"
+    - row "Internet Explorer 60.0 MB 0.33 MB/s 0.6 Mbps 7.5%":
+      - cell "Internet Explorer"
+      - cell "60.0 MB"
+      - cell "0.33 MB/s"
+      - cell "0.6 Mbps"
+      - cell "7.5%"
+    - row "Firefox 82.0 MB 0.35 MB/s 4.9 Mbps 8.4%":
+      - cell "Firefox"
+      - cell "82.0 MB"
+      - cell "0.35 MB/s"
+      - cell "4.9 Mbps"
+      - cell "8.4%"
+- paragraph:
+  - text: "CPU load of Chrome process:"
+  - strong: 3.1%
+- paragraph:
+  - text: "Memory Size of Firefox process:"
+  - strong: 82.0 MB
+- paragraph:
+  - text: "Network speed of Chrome process:"
+  - strong: 8.9 Mbps
+- paragraph:
+  - text: "Disk space of Firefox process:"
+  - strong: 0.35 MB/s
+- heading "Pagination Web Table" [level=2]
+- table:
+  - rowgroup:
+    - row "ID Name Price Select":
+      - cell "ID"
+      - cell "Name"
+      - cell "Price"
+      - cell "Select"
+  - rowgroup:
+    - row "1 Smartphone $10.99":
+      - cell "1"
+      - cell "Smartphone"
+      - cell "$10.99"
+      - cell:
+        - checkbox
+    - row "2 Laptop $19.99":
+      - cell "2"
+      - cell "Laptop"
+      - cell "$19.99"
+      - cell:
+        - checkbox
+    - row "3 Tablet $5.99":
+      - cell "3"
+      - cell "Tablet"
+      - cell "$5.99"
+      - cell:
+        - checkbox
+    - row "4 Smartwatch $7.99":
+      - cell "4"
+      - cell "Smartwatch"
+      - cell "$7.99"
+      - cell:
+        - checkbox
+    - row "5 Wireless Earbuds $8.99":
+      - cell "5"
+      - cell "Wireless Earbuds"
+      - cell "$8.99"
+      - cell:
+        - checkbox
+- list:
+  - listitem:
+    - link "1"
+  - listitem:
+    - link "2"
+  - listitem:
+    - link "3"
+  - listitem:
+    - link "4"
+- complementary
+- complementary:
+  - heading "Tabs" [level=2]
+  - link:
+    - img
+  - textbox
+  - button "Submit"
+  - heading "Dynamic Button" [level=2]
+  - button "START"
+  - heading "Alerts & Popups" [level=2]
+  - button "Simple Alert"
+  - button "Confirmation Alert"
+  - button "Prompt Alert"
+  - paragraph
+  - button "New Tab"
+  - button "Popup Windows"
+  - heading "Mouse Hover" [level=2]
+  - paragraph: Move the mouse over the button to open the dropdown menu.
+  - button "Point Me"
+  - heading "Double Click" [level=2]
+  - text: "Field1:"
+  - textbox: Hello World!
+  - text: "Field2:"
+  - textbox
+  - button "Copy Text"
+  - paragraph: Double click on button, the text from Field1 will be copied into Field2.
+  - heading "Drag and Drop" [level=2]
+  - paragraph: Drag me to my target
+  - paragraph: Drop here
+  - heading "Slider" [level=2]
+  - paragraph:
+    - text: "Price range:"
+    - textbox "Price range:": $75 - $300
+  - heading "SVG Elements" [level=2]
+  - img
+  - img
+  - img
+  - heading "Scrolling DropDown" [level=2]
+  - textbox "Select an item"
+  - heading "Labels And Links" [level=2]
+  - heading "Mobile Labels" [level=4]
+  - text: Samsung Real Me Moto
+  - heading "Laptop Links" [level=4]
+  - link "Apple"
+  - link "Lenovo"
+  - link "Dell"
+  - heading "Broken Links" [level=4]
+  - link "Errorcode 400"
+  - link "Errorcode 401"
+  - link "Errorcode 403"
+  - link "Errorcode 404"
+  - link "Errorcode 408"
+  - link "Errorcode 500"
+  - link "Errorcode 502"
+  - link "Errorcode 503"
+  - heading "Visitors" [level=2]
+  - img "A chart."
+  - table:
+    - rowgroup:
+      - row:
+        - cell
+        - cell
+    - rowgroup:
+      - row "0 58":
+        - cell "0"
+        - cell "58"
+      - row "1 86":
+        - cell "1"
+        - cell "86"
+      - row "2 88":
+        - cell "2"
+        - cell "88"
+      - row "3 95":
+        - cell "3"
+        - cell "95"
+      - row "4 94":
+        - cell "4"
+        - cell "94"
+      - row "5 83":
+        - cell "5"
+        - cell "83"
+      - row "6 63":
+        - cell "6"
+        - cell "63"
+      - row "7 57":
+        - cell "7"
+        - cell "57"
+      - row "8 100":
+        - cell "8"
+        - cell "100"
+      - row "9 98":
+        - cell "9"
+        - cell "98"
+      - row "10 93":
+        - cell "10"
+        - cell "93"
+      - row "11 88":
+        - cell "11"
+        - cell "88"
+      - row "12 70":
+        - cell "12"
+        - cell "70"
+      - row "13 56":
+        - cell "13"
+        - cell "56"
+      - row "14 44":
+        - cell "14"
+        - cell "44"
+      - row "15 78":
+        - cell "15"
+        - cell "78"
+      - row "16 80":
+        - cell "16"
+        - cell "80"
+      - row "17 85":
+        - cell "17"
+        - cell "85"
+      - row "18 85":
+        - cell "18"
+        - cell "85"
+      - row "19 75":
+        - cell "19"
+        - cell "75"
+      - row "20 55":
+        - cell "20"
+        - cell "55"
+      - row "21 54":
+        - cell "21"
+        - cell "54"
+      - row "22 86":
+        - cell "22"
+        - cell "86"
+      - row "23 82":
+        - cell "23"
+        - cell "82"
+      - row "24 94":
+        - cell "24"
+        - cell "94"
+      - row "25 91":
+        - cell "25"
+        - cell "91"
+      - row "26 71":
+        - cell "26"
+        - cell "71"
+      - row "27 54":
+        - cell "27"
+        - cell "54"
+      - row "28 50":
+        - cell "28"
+        - cell "50"
+      - row "29 69":
+        - cell "29"
+        - cell "69"
+  - text: 3,374,401
+- contentinfo:
+  - table:
+    - rowgroup:
+      - row "Form Section 1 This is a paragraph in Section 1. Submit Section 2 This is a paragraph in Section 2. Submit Section 3 This is a paragraph in Section 3. Submit Footer Links Home Hidden Elements & AJAX Download Files ShadowDOM Mobiles Laptops Blog Youtube":
+        - cell "Form Section 1 This is a paragraph in Section 1. Submit Section 2 This is a paragraph in Section 2. Submit Section 3 This is a paragraph in Section 3. Submit Footer Links Home Hidden Elements & AJAX Download Files":
+          - heading "Form" [level=2]
+          - heading "Section 1" [level=4]
+          - paragraph: This is a paragraph in Section 1.
+          - textbox
+          - button "Submit"
+          - heading "Section 2" [level=4]
+          - paragraph: This is a paragraph in Section 2.
+          - textbox
+          - button "Submit"
+          - heading "Section 3" [level=4]
+          - paragraph: This is a paragraph in Section 3.
+          - textbox
+          - button "Submit"
+          - heading "Footer Links" [level=2]
+          - list:
+            - listitem:
+              - link "Home"
+            - listitem:
+              - link "Hidden Elements & AJAX"
+            - listitem:
+              - link "Download Files"
+        - cell "ShadowDOM Mobiles Laptops Blog Youtube":
+          - heading "ShadowDOM" [level=2]
+          - text: Mobiles Laptops
+          - link "Blog"
+          - textbox
+          - checkbox
+          - textbox
+          - link "Youtube"
+  - text: Theme images by
+  - link "merrymoonmary"
+  - text: . Powered by
+  - link "Blogger"
+  - text: .
+```
+
+# Test source
+
+```ts
+   1 | import {test,expect} from '@playwright/test';
+   2 |
+   3 | test.skip('Single File Upload',async ({page})=>{
+   4 |     await page.goto('https://testautomationpractice.blogspot.com/')
+   5 |
+   6 |     await page.waitForSelector('#singleFileInput');
+   7 |     await page.locator('#singleFileInput').click();
+   8 |
+   9 |     await page.locator('#singleFileInput').setInputFiles('tests/uploadFiles/Assertions.spec copy.js');
+  10 | })
+  11 |
+  12 |
+  13 | test('Mulitple Files Upload',async ({page})=>{
+  14 |     await page.goto('https://testautomationpractice.blogspot.com/')
+  15 |
+> 16 |     await page.waitForSelector('#multipleFilesInputt');
+     |                ^ Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+  17 |     await page.locator('#multipleFilesInput').click();
+  18 |
+  19 |     await page.locator('#multipleFilesInput').setInputFiles(['tests/uploadFiles/Assertions.speccopy.js',
+  20 |         'tests/uploadFiles/Assertions.speccopy.js']  
+  21 |     );
+  22 | })
+  23 |
+```

@@ -277,8 +277,25 @@ Assertions
 				expect(await page.locator('locator')).isChecked().toBeFalsy();// false
 
 
+---------------------------------------------------------------------------
 
+Allure Reports for Playwright
+=============================
 
+1. Installtion of allure-playwright module
+	npm i -D @playwright/test allure-playwright
+	
+2. Installing Allure command Line
+		npm install -g allure-commandline --save-dev
+
+3. playwright.config.js
+			reporter='allure-playwright'
+
+4.Run the tests
+  npx playwright test tests/spec filename
+  
+5. Open Allure Report:
+		allure open allure-report
 
 
 
