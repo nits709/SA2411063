@@ -1,0 +1,10 @@
+package MyHooks;
+
+import capston.Utilities.baseUtil.ObjectLaunched;
+
+public class MyHooks extends ObjectLaunched {
+
+	
+	
+	
+}

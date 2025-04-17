@@ -1,0 +1,18 @@
+package capston.Pages;
+
+import capston.Utilities.baseUtil.coreFunctions;
+
+public class loginPage extends coreFunctions {
+
+	
+	// file holds all locatora and functions belongs the login page
+	
+	
+	
+	public void userLoginWithValidCredentails() {
+		
+	}
+}
+
+
+

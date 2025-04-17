@@ -1,0 +1,22 @@
+package capston.Utilities.baseUtil;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class ObjectLaunched {
+	
+	public static File file;
+	public static FileInputStream fis;
+	public static Properties prop;
+	
+	
+	public void init() {
+		try {
+		file = new File("filename");
+		fis = new FileInputStream(file);
+	}catch(Exception e) {
+		System.out.println(e.getMessage());
+	}
+	}
+}

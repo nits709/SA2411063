@@ -1,0 +1,25 @@
+package MyHooks;
+
+import capston.Utilities.baseUtil.ObjectLaunched;
+import io.cucumber.java.After;
+
+public class MyHooks extends ObjectLaunched {
+	
+	
+	
+	
+	public void tearUp() {
+		setupMyFramework();
+	
+	}
+	
+	
+	@After
+	public void tearDown() {
+		stopsSelenium();
+	}
+
+	
+	
+	
+}

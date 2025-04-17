@@ -1,0 +1,12 @@
+package capston.Utilities.baseUtil;
+
+public class ObjectLaunched {
+	
+	public static File file;
+	
+	
+	public void init() {
+		
+	}
+
+}

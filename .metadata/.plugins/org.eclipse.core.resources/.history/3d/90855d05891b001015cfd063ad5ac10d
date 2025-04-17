@@ -1,0 +1,51 @@
+package capston.Utilities.baseUtil;
+
+
+import static capston.Utilities.baseUtil.ObjectLaunched.prop;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class coreFunctions {
+
+	protected WebDriver driver;
+
+	
+	public coreFunctions(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void navigateURL() {
+		driver.get(prop.getProperty("applicationURL"));
+	}
+
+	public void type(String locator, String testData) {
+		driver.findElement(By.xpath(prop.getProperty("username"))).sendKeys(testData);
+	}
+
+	public void clickElement(String locator) {
+		driver.findElement(By.xpath(prop.getProperty("login"))).click();
+	}
+	
+	public void log(String msg) {
+		System.out.println(msg);
+	}
+	
+	public void takeScreenShot(){
+		// fileName of the screenshot
+		Date d=new Date();
+		String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
+		String filePath = ExtentReporter.screenshotFolderPath;
+		// take screenshot
+		File srcFile = ((TakesScreenshot)baseUtilDriver).getScreenshotAs(OutputType.FILE);
+		try {
+			// get the dynamic folder name
+			FileUtils.copyFile(srcFile, new File(filePath+"//"+screenshotFile));
+			//put screenshot file in reports
+			test.log(Status.INFO,"Screenshot-> "+ test.addScreenCaptureFromPath(filePath+"//"+screenshotFile));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

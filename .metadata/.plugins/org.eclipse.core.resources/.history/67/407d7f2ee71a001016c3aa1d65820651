@@ -1,0 +1,29 @@
+package capston.Pages;
+
+import org.openqa.selenium.WebDriver;
+
+import capston.Utilities.baseUtil.coreFunctions;
+
+public class loginPage extends coreFunctions {
+
+	
+	// file holds all locatora and functions belongs the login page
+	
+	
+	
+	public loginPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void userLoginWithValidCredentails() {
+		
+		type("usernamelocator", "testData");
+		type("passwordlocator","testData"); 
+		clickElement("locator");
+		
+	}
+}
+
+
+

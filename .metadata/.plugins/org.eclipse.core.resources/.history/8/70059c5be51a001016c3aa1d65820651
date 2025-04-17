@@ -1,0 +1,21 @@
+package stepDef;
+
+import capston.Utilities.baseUtil.coreFunctions;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class LoginSteps extends coreFunctions{
+
+	
+	@Given("The user launch the application URL")
+	public void userLaunchApplicationURL() {
+		navigateURL();
+		
+	}
+	
+	@When("The user login with valid credentails")
+		public void enterValidCredentials() {
+			
+	}
+	
+}

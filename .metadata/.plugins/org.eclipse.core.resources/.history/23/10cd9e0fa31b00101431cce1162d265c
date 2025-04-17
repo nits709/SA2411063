@@ -1,0 +1,42 @@
+package stepDef;
+
+import org.openqa.selenium.WebDriver;
+import MyHooks.MyHooks;
+import capston.Pages.loginPage;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import static capston.Utilities.baseUtil.ObjectLaunched.reports;
+import static capston.Utilities.baseUtil.ObjectLaunched.test;
+
+
+public class LoginSteps {
+
+	WebDriver driver;
+	MyHooks hooks;
+	loginPage lPage;
+
+	public LoginSteps(MyHooks hook) {
+		this.hooks = hook;
+		this.driver = hooks.getDriver();
+		this.lPage = new loginPage(driver);
+		test = reports.createTest("Login test");
+	}
+
+	@Given("The user launch the application URL")
+	public void userLaunchApplicationURL() {
+		lPage.navigateURL();
+
+	}
+
+	@When("The user login with valid credentails")
+	public void enterValidCredentials() {
+
+		lPage.userLoginWithValidCredentails();
+	}
+
+	@When("The user validate the page title {string}")
+	public void userValidatePageTitle(String pageTitle) {
+		lPage.checkPagetitle(pageTitle);
+	}
+
+}

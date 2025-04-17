@@ -1,0 +1,31 @@
+package MyHooks;
+
+import org.openqa.selenium.WebDriver;
+
+import capston.Utilities.baseUtil.ObjectLaunched;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
+public class MyHooks extends ObjectLaunched {
+	
+	
+	
+	@Before
+	public void tearUp() {
+		setupMyFramework();
+	}
+	
+	
+	@After
+	public void tearDown() {
+		stopsSelenium();
+	}
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	
+	
+	
+}

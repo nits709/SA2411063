@@ -1,0 +1,4 @@
+Feature: this feature going to have login page scenarios
+
+Scenario: check login functionality with valid credentails
+Given The user launch the application URL

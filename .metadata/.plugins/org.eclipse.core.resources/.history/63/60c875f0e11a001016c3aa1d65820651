@@ -1,0 +1,17 @@
+package stepDef;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import capston.Utilities.baseUtil.coreFunctions;
+import io.cucumber.java.en.Given;
+
+public class LoginSteps extends coreFunctions{
+
+	
+	@Given("The user launch the application URL")
+	public void userLaunchApplicationURL() {
+		navigateURL();
+		
+	}
+}

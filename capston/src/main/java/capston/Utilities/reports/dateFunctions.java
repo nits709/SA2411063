@@ -1,0 +1,17 @@
+package capston.Utilities.reports;
+
+import java.util.Date;
+
+public class dateFunctions {
+
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Date d = new Date();
+		
+		System.out.println("Date "+ d.toString());
+		System.out.println(d.toString().replaceAll(":", "-"));
+	}
+}

@@ -1,0 +1,4 @@
+Feature: this feature going to have registeration page scenarios
+
+Scenario: check registeration functionality 
+Given The user launch the application URL

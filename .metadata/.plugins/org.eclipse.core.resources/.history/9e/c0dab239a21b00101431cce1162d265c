@@ -1,0 +1,8 @@
+applicationURL=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+
+
+#Login Page Locators
+username=//input[@name='username']
+password=//input[@name='password']
+login=//button[@type='submit']
