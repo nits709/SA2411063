@@ -20,7 +20,7 @@ import capston.Utilities.reports.Extentreporter;
 
 public class coreFunctions {
 
-	protected WebDriver driver;
+	WebDriver driver;
 
 	public coreFunctions(WebDriver driver) {
 		this.driver = driver;
@@ -28,17 +28,17 @@ public class coreFunctions {
 
 	public void navigateURL() {
 		driver.get(prop.getProperty("applicationURL"));
-		//log("User navigates to " + prop.getProperty("applicationURL"));
+		log("User navigates to " + prop.getProperty("applicationURL"));
 	}
 
 	public void type(String locator, Object testData) {
 		driver.findElement(By.xpath(prop.getProperty(locator))).sendKeys(String.valueOf(testData));
-	//	log("Enter " + testData + "-" + prop.getProperty(locator));
+		log("Enter " + "'"+testData + "'" + "-" + prop.getProperty(locator));
 	}
 
 	public void clickElement(String locator) {
 		driver.findElement(By.xpath(prop.getProperty(locator))).click();
-		//log("Click on " + prop.getProperty(locator));
+		log("Click on " + prop.getProperty(locator));
 	}
 
 	public void validateTitle(String Expectedtitle) {

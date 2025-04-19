@@ -17,9 +17,9 @@ public class loginPage extends coreFunctions {
 		navigateURL();
 	}
 
-	public void userLoginWithValidCredentails() {
-		type("username","Admin");
-		type("password", "admin123");
+	public void userLoginWithValidCredentails(Object username, Object password) {
+		type("username",username);
+		type("password", password);
 		clickElement("login");
 
 	}
@@ -27,4 +27,9 @@ public class loginPage extends coreFunctions {
 	public void checkPagetitle(String pageTitle) {
 		validateTitle(pageTitle);
 	}
+
+//	public void userLoginWithValidCredentails(Object object, Object object2) {
+//		// TODO Auto-generated method stub
+//		
+//	}
 }

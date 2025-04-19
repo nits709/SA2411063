@@ -1,0 +1,9 @@
+Feature: this feature going to have login page scenarios
+
+Scenario outline: check login functionality with valid credentails
+Given The user launch the application URL
+When The user login with valid credentails
+Then The user validate the page title "OrangeHRM"
+
+
+Example:
